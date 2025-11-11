@@ -93,3 +93,52 @@ CareConnect/
 ├── .gitignore                # Ignored build & secret files
 ├── README.md                 # Project documentation
 └── .env.example              # Sample environment variables
+```
+
+## 🔧 Setup Instructions
+### 🪄 1. Clone Repository
+ ```bash 
+git clone https://github.com/kharayatvivek28/CareConnect.git
+cd CareConnect
+ ```
+
+### ⚙️ 2. Setup Firebase
+
+- Create a Firebase project in Firebase Console 
+- Enable Authentication (Email/Password)
+- Enable Cloud Firestore 
+- Add an Android and/or iOS app to Firebase 
+- Download google-services.json → place inside android/app/ 
+- Download GoogleService-Info.plist → place inside ios/Runner/
+
+### 📦 4. Install Dependencies
+```bash 
+flutter pub get
+
+```
+
+### ▶️ 5. Run the App
+```bash
+flutter run
+
+```
+
+## 🔒 Firestore Collections Used
+| **Collection** | **Description**                                                                                   |
+| -------------- | ------------------------------------------------------------------------------------------------- |
+| `users`        | Stores user information, addresses, and base city for personalized service matching.              |
+| `services`     | Contains all available service categories, details, and related add-ons.                          |
+| `providers`    | Holds information about service providers, including their profession, city, skills, and ratings. |
+| `bookings`     | Tracks user bookings with real-time status updates (Active, Completed, Cancelled).                |
+| `feedback`     | Stores customer feedback and ratings for providers *(planned integration)*.                       |
+
+## 🧭 Future Enhancements
+
+- 🔔 Real-time push notifications using Firebase Cloud Messaging 
+- 💬 In-app chat between user & provider 
+- 📍 Live tracking of provider using GPS 
+- 🌐 Multi-city & multi-language support 
+- 🧾 Downloadable invoices & advanced payment modes 
+- 🧠 AI-based service recommendations 
+- 🛠️ Admin dashboard (for service, provider, and feedback management)
+- ⭐ Dynamic rating & feedback system connected to Firestore
