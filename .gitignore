@@ -1,0 +1,109 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+#File containig API keys
+
+# Flutter / Dart
+
+build/
+**/build/
+pubspec.lock
+
+# Android
+/android/.gradle/
+**/local.properties
+**/android/key.properties
+**/android/key.jks
+*.keystore
+**/captures/
+.gradle/
+
+# iOS
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/.symlinks/
+Pods/
+DerivedData/
+*.xcworkspace
+*.xcuserdatad
+*.xcuserstate
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# VS Code
+.vscode/
+.history/
+
+# IntelliJ / Android Studio
+out/
+
+# macOS
+
+# Logs
+logs/
+
+# Firebase / env / secret files
+.env
+.env.*
+google-services.json
+**/GoogleService-Info.plist
+firebase-debug.log
+firebase.json
+
+# NPM / backend
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+dist/
+
+# Misc
+coverage/
+coverage.lcov
+*.lock
